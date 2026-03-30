@@ -19,7 +19,10 @@
 #' @importFrom utils read.delim
 read_markdown<-function(markdown,lower_header=TRUE){
   
-  read.delim(text=markdown,sep='|',strip.white=TRUE,skip=2) |>
+  markdown |>
+    (\(x) readLines(textConnection(x)))() |>
+    (\(x) if(x[1]!='') { c('',x)} else { x })() |>
+    (\(x) read.delim(text=x,sep='|',strip.white=TRUE,skip=2))() |>
     (\(x) if(sum(is.na(x[,1]))==nrow(x)&sum(is.na(x[,ncol(x)]))==nrow(x)) {
       x[,2:(ncol(x)-1)]
     } else {
