@@ -1,5 +1,5 @@
 Package: readmarkdown
-Title: Provides read_markdown(), a simple function for reading a Markdown table
+Title: Function for Reading Markdown Tables
 Version: 0.1.2
 Authors@R: 
     person(given = 'Yea-Hung', family = 'Chen', 
