@@ -26,10 +26,16 @@ markdown_table<-"
 "
 ```
 
-Load the data:
+Read the table:
 
 ```r
-tt<-read_markdown(markdown_table)
+read_markdown(markdown_table)
+```
+
+Equivalently, read the table using using native piping:
+
+```r
+markdown_table |> read_markdown()
 ```
 
 # Details
