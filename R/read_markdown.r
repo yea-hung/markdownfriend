@@ -15,8 +15,8 @@
 #' orange|3.09
 #' "
 #' read_markdown(markdown)
-#' @importFrom stats setNames
 #' @importFrom utils read.delim
+#' @importFrom stats setNames
 read_markdown<-function(markdown,lower_header=TRUE){
   
   markdown |>
