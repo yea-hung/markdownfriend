@@ -6,10 +6,10 @@ Install *remotes* if you don't already have it:
 install.packages('remotes')
 ```
 
-Install the *markdownfriend* package:
+Install the *readmarkdown* package:
 
 ```r
-remotes::install_github('yea-hung/markdownfriend')
+remotes::install_github('yea-hung/readmarkdown')
 ```
 
 # Example
