@@ -32,3 +32,6 @@ Load the data:
 tt<-read_markdown(markdown_table)
 ```
 
+# Details
+
+This package uses base R.
