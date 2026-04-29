@@ -1,15 +1,9 @@
 ## Installation
 
-Install *remotes* if you don't already have it:
+To install the package, use `install_github()` from the *remotes* package or `pkg_install()` from the *pak* package:
 
 ```r
-install.packages('remotes')
-```
-
-Install the *readmarkdown* package:
-
-```r
-remotes::install_github('yea-hung/readmarkdown')
+pak::pkg_install('yea-hung/readmarkdown')
 ```
 
 ## Example
