@@ -1,4 +1,4 @@
-# Installation
+## Installation
 
 Install *remotes* if you don't already have it:
 
@@ -12,7 +12,7 @@ Install the *readmarkdown* package:
 remotes::install_github('yea-hung/readmarkdown')
 ```
 
-# Example
+## Example
 
 Define the Markdown table:
 
@@ -38,6 +38,6 @@ Equivalently, read the table using using native piping:
 markdown_table |> read_markdown()
 ```
 
-# Details
+## Details
 
 This package uses base R.
